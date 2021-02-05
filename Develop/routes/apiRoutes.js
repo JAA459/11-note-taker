@@ -1,6 +1,12 @@
 var fs = require("fs");
 var notes = require("../db/db.json");
 var path = require("path");
+const bodyParser = require('body-parser');
+const crypto = require("crypto");
+
+function generateUniqueID() { 
+    return crypto.randomBytes(8).toString('hex') 
+  } 
 // var filepath = "../db/db.json"
 // var notes = fs.readFile(filepath, 'utf8', (error, data) =>
 // error ? console.error(error) : console.log(data)
@@ -26,6 +32,8 @@ module.exports = function (app) {
 app.post("/api/notes", function (req, res) {
     const file = path.join(__dirname,"../db/db.json");
     const newNote = req.body;
+
+    newNote.id = generateUniqueID();
 
     notes.push(newNote);
 
