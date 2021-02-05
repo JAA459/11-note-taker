@@ -29,7 +29,7 @@ app.post("/api/notes", function (req, res) {
 
     notes.push(newNote);
 
-    fs.writeFile(file,JSON.stringify(newNote, null, 4) ,err => {
+    fs.appendFile(file,JSON.stringify(newNote, null, 4) ,err => {
         if (err) throw err;
         console.log("note saved!");
     });
