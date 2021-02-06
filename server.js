@@ -8,11 +8,11 @@ const bodyParser = require('body-parser');
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json());
-app.use(express.static("../public"));
+app.use(express.static("./Develop/public"));
 
 
-require("../routes/apiRoutes")(app);
-require("../routes/htmlRoutes")(app);
+require("./Develop/routes/apiRoutes")(app);
+require("./Develop/routes/htmlRoutes")(app);
 
 
 app.listen(PORT, function () {
