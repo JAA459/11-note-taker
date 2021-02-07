@@ -35,5 +35,5 @@
   ### Questions ###
   For further questions you can contact me at:</br>
   GitHub: [JAA459](https://github.com/JAA459) </br>
-  Email: [JAlexArroyo@gmail.com](JAlexArroyo@gmail.com)
+  Email: [JAlexArroyo@gmail.com](JAlexArroyo@gmail.com)</br>
   Heroku Link: [Heroku sight](https://dry-shore-45345.herokuapp.com/)
