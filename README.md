@@ -23,7 +23,7 @@
       
       
   ### Credits ###
-  *UofA for starter materials and front end code.
+  * UofA for starter materials and front end code.
       
       
   ### Test ###
